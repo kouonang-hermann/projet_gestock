@@ -16,7 +16,7 @@ public class App extends Application {
         launch(args);
     }
     @Override
-    public void Start (Stage window){
+    public void start (Stage window){
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/view/LoginView.fxml"));
 
