@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
     <left>
         <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #2ecc71;" BorderPane.alignment="CENTER">
             <children>
@@ -24,9 +24,9 @@
     <center>
         <AnchorPane prefHeight="500.0" prefWidth="385.0" BorderPane.alignment="CENTER">
             <children>
-                <TextField layoutX="101.0" layoutY="202.0" promptText="ID Code" style="-fx-background-color: transparent; -fx-border-color: #2ecc71; -fx-border-width: 0px 0px 2px 0px;" />
-                <PasswordField layoutX="102.0" layoutY="264.0" promptText="PassWord" style="-fx-background-color: transparent; -fx-border-color: #2ecc71; -fx-border-width: 0px 0px 2px 0px;" />
-                <Button layoutX="199.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #2ecc71;" text="Login" />
+                <TextField fx:id="tf_id" layoutX="101.0" layoutY="202.0" promptText="ID Code" style="-fx-background-color: transparent; -fx-border-color: #2ecc71; -fx-border-width: 0px 0px 2px 0px;" />
+                <PasswordField fx:id="tf_password" layoutX="102.0" layoutY="264.0" promptText="PassWord" style="-fx-background-color: transparent; -fx-border-color: #2ecc71; -fx-border-width: 0px 0px 2px 0px;" />
+                <Button fx:id="btn_login" layoutX="199.0" layoutY="322.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #2ecc71;" text="Login" />
                 <Hyperlink layoutX="102.0" layoutY="426.0" text="Have you Forget You PassWord?" textFill="#32a151">
                     <font>
                         <Font size="10.0" />

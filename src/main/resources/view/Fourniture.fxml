@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="622.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Fourniture">
+   <children>
+      <TableView layoutY="-1.0" prefHeight="622.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="id" />
+          <TableColumn prefWidth="75.0" text="Article" />
+            <TableColumn prefWidth="75.0" text="Date entrer" />
+            <TableColumn prefWidth="75.0" text="Date sortir" />
+            <TableColumn prefWidth="75.0" text="Quantite" />
+            <TableColumn prefWidth="75.0" text="Prix unitaire" />
+            <TableColumn prefWidth="75.0" text="Prix Totale" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

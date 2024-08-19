@@ -7,7 +7,8 @@ public class DataBase {
 
     public static Connection createConnection() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://loclhost:3307/Getock", "root", "Fa13/08/99");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/getock", "root", "Fa13/08/99");
+            return con;
         } catch (Exception exception){
             exception.printStackTrace();
 
